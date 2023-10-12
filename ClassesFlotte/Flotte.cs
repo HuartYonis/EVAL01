@@ -27,7 +27,7 @@ namespace ClassesFlotte
         /// <returns>true si ajout du véhicule effectué ou false dans le cas contraire</returns>
         public bool AjouterVehicule(Vehicule unVehicule)
         {
-            string pattern = @"";
+            string pattern = @"^[A-Z]{2}-\d{3}-[A-Z]{2}$";
             bool match = Regex.IsMatch(unVehicule.GetImmat(), pattern);
             if (match)
             {
@@ -63,8 +63,7 @@ namespace ClassesFlotte
         /// <returns>nombre de véhicules de tourisme</returns>
         public int NbVehiculesTourisme()
         {
-            // TODO
-            return 0;
+            return this.GetLesVehicules().Count();
         }
 
     }

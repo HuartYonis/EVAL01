@@ -39,7 +39,7 @@ namespace ClassesFlotte
                 prevoirEnt = true;
 
             if (diffDates.Days >= 720)
-                this.leModele.GetFrequenceEnt => this.GetKmActuel() - this.GetKmEntretien())
+                this.leModele.GetFrequenceEnt() <= this.GetKmActuel() - )
             return prevoirEnt;
         }
     }
